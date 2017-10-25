@@ -13,33 +13,38 @@
                 display: none;
             }
 
+            /* Desk and Laptop */
             @media (min-width: 1680px) {
-                #testImg1800 {
+                #testImgDesk {
                     display: block;
                 } 
             }
             @media (min-width: 1320px) and (max-width: 1679px) {
-                #testImg1500 {
+                #testImgLaptop {
                     display: block;
                 } 
             }
+            
+            /* Tablet */
             @media (min-width: 960px) and (max-width: 1319px) {
-                #testImg1140 {
+                #testImgTabletL {
                     display: block;
                 } 
             }
+            @media (min-width: 600px) and (max-width: 1079px) and (orientation: portrait) {
+                #testImgTabletP {
+                    display: block;
+                } 
+            }
+            
+            /* Mobile */
             @media (max-width: 959px) and (orientation: landscape) {
-                #testImg660 {
-                    display: block;
-                } 
-            }
-            @media (min-width: 600px) and (orientation: portrait) {
-                #testImg600P {
+                #testImgMobileL {
                     display: block;
                 } 
             }
             @media (max-width: 599px) and (orientation: portrait) {
-                #testImg372P {
+                #testImgMobileP {
                     display: block;
                 } 
             }
@@ -65,12 +70,14 @@
         </style>
     </head>
     <body>
-        <img id="testImg1800" class="testImg" src="1800.png">
-        <img id="testImg1500" class="testImg" src="1500.png">
-        <img id="testImg1140" class="testImg" src="1140.png">
-        <img id="testImg660" class="testImg" src="660.png">
-        <img id="testImg600P" class="testImg" src="600P.png">
-        <img id="testImg372P" class="testImg" src="372.png">
+        <img id="testImgDesk" class="testImg" src="desk1800.png">
+        <img id="testImgLaptop" class="testImg" src="laptop1500.png">
+        
+        <img id="testImgTabletL" class="testImg" src="tabletLandscape1140.png">
+        <img id="testImgTabletP" class="testImg" src="tabletPortrait600.png">
+        
+        <img id="testImgMobileL" class="testImg" src="mobileLandscape660.png">
+        <img id="testImgMobileP" class="testImg" src="mobilePortrait372.png">
 
         <p id="pageWidthP"></p>
 
