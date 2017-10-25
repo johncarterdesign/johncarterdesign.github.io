@@ -18,11 +18,17 @@
                 #testImgDesk {
                     display: block;
                 } 
+                #mediaDesk {
+                    display: block;
+                }
             }
             @media (min-width: 1320px) and (max-width: 1679px) {
                 #testImgLaptop {
                     display: block;
                 } 
+                #mediaLaptop {
+                    display: block;
+                }
             }
             
             /* Tablet */
@@ -30,11 +36,17 @@
                 #testImgTabletL {
                     display: block;
                 } 
+                #mediaTabletL {
+                    display: block;
+                }
             }
             @media (min-width: 600px) and (max-width: 1079px) and (orientation: portrait) {
                 #testImgTabletP {
                     display: block;
                 } 
+                #mediaTabletP {
+                    display: block;
+                }
             }
             
             /* Mobile */
@@ -42,11 +54,17 @@
                 #testImgMobileL {
                     display: block;
                 } 
+                #mediaMobileL {
+                    display: block;
+                }
             }
             @media (max-width: 599px) and (orientation: portrait) {
                 #testImgMobileP {
                     display: block;
                 } 
+                #mediaMobileP {
+                    display: block;
+                }
             }
 
             #testText {
@@ -67,17 +85,25 @@
                 right: 48px;
                 color: #fff;
             }
+            
+            .media {
+                display: none;
+                position: absolute;
+                top: 32px;
+                right: 48px;
+                color: #fff;
+            }
         </style>
     </head>
     <body>
-        <img id="testImgDesk" class="testImg" src="desk1800.png">
-        <img id="testImgLaptop" class="testImg" src="laptop1500.png">
+        <img id="testImgDesk" class="testImg" src="desk1800.png"><p id="mediaDesk" class="media">Desk</p>
+        <img id="testImgLaptop" class="testImg" src="laptop1500.png"><p id="mediaLaptop" class="media">Desk</p>
         
-        <img id="testImgTabletL" class="testImg" src="tabletLandscape1140.png">
-        <img id="testImgTabletP" class="testImg" src="tabletPortrait600.png">
+        <img id="testImgTabletL" class="testImg" src="tabletLandscape1140.png"><p id="mediaTabletL" class="media">Desk</p>
+        <img id="testImgTabletP" class="testImg" src="tabletPortrait600.png"><p id="mediaTabletP" class="media">Desk</p>
         
-        <img id="testImgMobileL" class="testImg" src="mobileLandscape660.png">
-        <img id="testImgMobileP" class="testImg" src="mobilePortrait372.png">
+        <img id="testImgMobileL" class="testImg" src="mobileLandscape660.png"><p id="mediaMobileL" class="media">Desk</p>
+        <img id="testImgMobileP" class="testImg" src="mobilePortrait372.png"><p id="mediaMobileP" class="media">Desk</p>
 
         <p id="pageWidthP"></p>
 
