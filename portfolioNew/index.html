@@ -11,7 +11,14 @@
     #mediaTest {
         color: #000;
     }
+    
+    @media (min-resolution: 0dpi) {
+        #mediaTest {
+            color: green;
+        }
+    }
 
+/*
     @media (max-resolution: 119dpi) {
         #mediaTest {
             color: red;
@@ -46,11 +53,12 @@
             color: orange;
         }
     }
+*/
 </style>
 
 <section class="container">
     <div class="page right" style="background-color: green">
-        <div id="mediaTest" class="column large" style="background-color: #fff; height: 200px">Media Test</div>
+        <div id="mediaTest" class="column large" style="background-color: #fff; height: 200px">Media Test Update</div>
         <div class="column small" style="background-color: blue; height: 300px"></div>
     </div>
 </section>
