@@ -12,9 +12,26 @@
         color: #000;
     }
 
-    @media (min-resolution: 192dpi) {
+    @media (max-resolution: 119dpi) {
         #mediaTest {
             color: red;
+        }
+    }
+    @media (min-resolution: 120dpi) and (max-resolution: 179dpi) {
+        #mediaTest {
+            color: green;
+        }
+    }
+
+    @media (min-resolution: 180dpi) and (max-resolution: 239dpi) {
+        #mediaTest {
+            color: blue;
+        }
+    }
+
+    @media (min-resolution: 240dpi) and (max-resolution: 299dpi) {
+        #mediaTest {
+            color: purple;
         }
     }
 </style>
