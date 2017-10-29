@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Test</title>
         <style>
             body {
@@ -30,7 +31,7 @@
                     display: block;
                 }
             }
-            
+
             /* Tablet */
             @media (min-width: 960px) and (max-width: 1319px) {
                 #testImgTabletL {
@@ -48,7 +49,7 @@
                     display: block;
                 }
             }
-            
+
             /* Mobile */
             @media (max-width: 959px) and (orientation: landscape) {
                 #testImgMobileL {
@@ -85,7 +86,7 @@
                 right: 48px;
                 color: #fff;
             }
-            
+
             .media {
                 display: none;
                 position: absolute;
@@ -98,16 +99,16 @@
     <body>
         <img id="testImgDesk" class="testImg" src="desk1800.png"><p id="mediaDesk" class="media">Desk</p>
         <img id="testImgLaptop" class="testImg" src="laptop1500.png"><p id="mediaLaptop" class="media">Laptop</p>
-        
+
         <img id="testImgTabletL" class="testImg" src="tabletLandscape1140.png"><p id="mediaTabletL" class="media">Tablet Landscape</p>
         <img id="testImgTabletP" class="testImg" src="tabletPortrait600.png"><p id="mediaTabletP" class="media">Tablet Portrait</p>
-        
+
         <img id="testImgMobileL" class="testImg" src="mobileLandscape660.png"><p id="mediaMobileL" class="media">Mobile Landscape</p>
         <img id="testImgMobileP" class="testImg" src="mobilePortrait372.png"><p id="mediaMobileP" class="media">Mobile Portrait</p>
 
         <p id="pageWidthP"></p>
 
-<!--        <p id="testText">I am a graphic designer</p>-->
+        <!--        <p id="testText">I am a graphic designer</p>-->
 
         <script>
             var pageWidth = window.innerWidth;
