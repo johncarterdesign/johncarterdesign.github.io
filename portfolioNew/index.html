@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>John Carter Design</title>
+    
+    <link rel="stylesheet" href="css/main.css">
+</head>
+    <body>
+        <style>
+    #mediaTest {
+        color: #000;
+    }
+
+    @media (min-resolution: 192dpi) {
+        #mediaTest {
+            color: red;
+        }
+    }
+</style>
+
+<section class="container">
+    <div class="page right" style="background-color: green">
+        <div id="mediaTest" class="column large" style="background-color: #fff; height: 200px">Media Test</div>
+        <div class="column small" style="background-color: blue; height: 300px"></div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="page right" style="background-color: green">
+        <div class="column large" style="background-color: red; height: 200px"></div>
+        <div class="column small" style="background-color: blue; height: 300px"></div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="page right" style="background-color: green">
+        <div class="column large" style="background-color: red; height: 200px"></div>
+        <div class="column small" style="background-color: blue; height: 300px"></div>
+    </div>
+</section>
+    </body>
+</html>
