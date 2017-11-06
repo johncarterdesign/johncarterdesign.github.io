@@ -7,68 +7,112 @@
     <title>John Carter Design</title>
     
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
     <body>
-        <style>
-    #mediaTest {
-        color: #000;
-    }
-    
-    @media (max-resolution: 119dpi) {
-        #mediaTest {
-            color: red;
-        }
-    }
-    @media (min-resolution: 120dpi) and (max-resolution: 179dpi) {
-        #mediaTest {
-            color: green;
-        }
-    }
+        <section id="landing" class="containerBG">
+    <div class="container right">
+        <div class="page">
+            <div class="column full">
+                <h1>John<br>Carter<br>Design</h1>
 
-    @media (min-resolution: 180dpi) and (max-resolution: 239dpi) {
-        #mediaTest {
-            color: blue;
-        }
-    }
+                <img id="logoJ" src="img/j.png">
+                <img id="logoC" src="img/c.png">
 
-    @media (min-resolution: 240dpi) and (max-resolution: 299dpi) {
-        #mediaTest {
-            color: purple;
-        }
-    }
-
-    @media (min-resolution: 300dpi) and (max-resolution: 359dpi) {
-        #mediaTest {
-            color: yellow;
-        }
-    }
-
-    @media (min-resolution: 360dpi) {
-        #mediaTest {
-            color: orange;
-        }
-    }
-</style>
-
-<section class="container">
-    <div class="page right" style="background-color: green">
-        <div id="mediaTest" class="column large" style="background-color: #fff; height: 200px">Media Test Update</div>
-        <div class="column small" style="background-color: blue; height: 300px"></div>
+                <img id="logoTest" src="img/logoStraight.png">
+            </div>
+            <div class="column full">
+                <ul id="menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#connect">Connect</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
 
-<section class="container">
-    <div class="page right" style="background-color: green">
-        <div class="column large" style="background-color: red; height: 200px"></div>
-        <div class="column small" style="background-color: blue; height: 300px"></div>
+<section id="about" class="containerBG">
+    <div class="container right">
+        <div class="page">
+            <h2><span id="aboutH2">About</span></h2>
+            <div class="column small">
+                <img class="img-block" src="img/portrait.png">
+            </div>
+            <div class="column large">
+                <p id="aboutP">I am a graphic designer and front-end web developer based in Salt Lake. I love making things (digital and otherwise) and learning new skills. At home you can find me listening to rock music from the 60s/70s, playing guitar, or watching TV. My wife and I are from Idaho.</p>
+
+                <h3>Skills</h3>
+                <ul id="aboutUL">
+                    <li><span>Design:</span> Webpage layouts, responsive design, color schemes, logos</li>
+                    <li><span>Front end coding:</span> HTML, CSS, Javascript, Web animations</li>
+                    <li><span>Software:</span> Adobe suite (Photoshop, Illustrator, InDesign)</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
 
-<section class="container">
-    <div class="page right" style="background-color: green">
-        <div class="column large" style="background-color: red; height: 200px"></div>
-        <div class="column small" style="background-color: blue; height: 300px"></div>
+<section id="work" class="containerBG">
+    <div class="container left">
+        <div class="page red">
+
+            <h2 class="red"><span>Work</span></h2>
+
+            <div class="sliderWrap basic">
+                <div class="slider">
+                    <div class="column large">
+                        <img class="img-block" src="img/workTechComm.png">
+                    </div>
+                    <div class="column small bottom">
+                        <h3 class="red">USU Tech Comm</h3>
+                        <p>This is the website I did for my major emphasis (English Tech Comm &amp; Rhetoric) at Utah State. While most campus sites use the university CMS.</p>
+                    </div>
+                </div>
+
+                <div class="slider">
+                    <div class="column large">
+                        <img class="img-block" src="img/workTechComm.png">
+                    </div>
+                    <div class="column small bottom">
+                        <h3 class="red">USU Tech Comm</h3>
+                        <p>This is the website I did for my major emphasis (English Tech Comm &amp; Rhetoric) at Utah State. While most campus sites use the university CMS.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
+
+<section id="connect" class="containerBG">
+    <div class="container right">
+        <div class="page blueDark">
+            <h2><span>Connect</span></h2>
+            <div class="column full">
+                <ul id="connectLinks">
+                    <li><a href="#"><i class="fa fa-envelope" style="font-size: 0.9em; bottom: 1px"></i>&nbsp;&nbsp;Email</a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i>&nbsp;Twitter</a></li>
+                    <li><a href="#"><i class="fa fa-linkedin" style="bottom: 1px"></i>&nbsp;LinkedIn</a></li>&nbsp;
+                    <li><a href="#"><i class="fa fa-behance"></i>&nbsp;Behance</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    (function(d){
+        var c = "", f = "flex", fw = "-webkit-"+f, e = d.createElement('b');
+        try { 
+            e.style.display = fw; 
+            e.style.display = f; 
+            c += (e.style.display == f || e.style.display == fw) ? f : "no-"+f; 
+        } catch(e) { 
+            c += "no-"+f; 
+        }
+        d.documentElement.className += c; 
+    })(document);
+</script>
     </body>
 </html>
